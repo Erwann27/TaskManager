@@ -27,7 +27,7 @@ public class ComplexTask implements Task{
             return null;
         }
         Date deadline = subTasks.get(0).getDeadline();
-        for(Task task : subTasks) {
+        for(Task task : getSubTasks()) {
             if(!(task == this)) {
                 Date taskDeadline = task.getDeadline();
                 if(deadline.compareTo(taskDeadline) < 0) {
@@ -46,7 +46,7 @@ public class ComplexTask implements Task{
     @Override
     public int getEstimatedTimeInDays() {
         int estimatedTime = 0;
-        for(Task task : subTasks) {
+        for(Task task : getSubTasks()) {
             if(!(task == this)) {
                 estimatedTime += task.getEstimatedTimeInDays();
             }
@@ -62,7 +62,7 @@ public class ComplexTask implements Task{
     public double getProgress() {
         double progressCount = 0;
         int estimatedTimeCount = 0;
-        for (Task task : subTasks) {
+        for (Task task : getSubTasks()) {
             if(!(task == this)) {
                 int estimatedTime = task.getEstimatedTimeInDays();
                 progressCount += task.getProgress() * estimatedTime;
