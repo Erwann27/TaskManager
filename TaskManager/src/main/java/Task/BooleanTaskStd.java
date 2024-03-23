@@ -10,8 +10,8 @@ public class BooleanTaskStd implements BooleanTask{
     private Priority priority;
     private int estimatedTime;
 
-    public BooleanTaskStd(String description,
-                          Date deadline, Priority priority, int estimatedTime) {
+    public BooleanTaskStd(String description, Date deadline,
+                          Priority priority, int estimatedTime) {
         this.finished = false;
         this.description = description;
         this.deadline = deadline;
