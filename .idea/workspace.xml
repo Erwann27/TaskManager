@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58317d12-4af3-4525-8161-26dc5953cb46" name="Changes" comment="Feature : Created AbstractFactory for tasks" />
+    <list default="true" id="58317d12-4af3-4525-8161-26dc5953cb46" name="Changes" comment="added project files">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/BooleanTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/BooleanTaskStd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/ComplexTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/Priority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/ProgressiveTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/ProgressiveTaskStd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/SimpleTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TaskFactory/TaskFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TaskFactory/TaskFactoryStd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,14 +40,14 @@
         <entry key="$PROJECT_DIR$/.." value="develop" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2e5ivbgyeEivIABZaBdKRlAx8Q5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,7 +58,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/erwann/Documents/master/archi_log/Projet",
     "node.js.detected.package.eslint": "true",
@@ -118,7 +133,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711207449744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modified pipeline">
+      <option name="closed" value="true" />
+      <created>1711225518431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711225518431</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modified pipeline">
+      <option name="closed" value="true" />
+      <created>1711225624075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711225624076</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added project files">
+      <option name="closed" value="true" />
+      <created>1711225669120</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711225669120</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +167,8 @@
     <MESSAGE value="Created Maven Project" />
     <MESSAGE value="Created Task classes" />
     <MESSAGE value="Feature : Created AbstractFactory for tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : Created AbstractFactory for tasks" />
+    <MESSAGE value="Modified pipeline" />
+    <MESSAGE value="added project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added project files" />
   </component>
 </project>
