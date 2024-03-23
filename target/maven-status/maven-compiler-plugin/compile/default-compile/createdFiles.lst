@@ -1,0 +1,11 @@
+Task/SimpleTask.class
+org/example/Main.class
+Task/BooleanTaskStd.class
+Task/ProgressiveTaskStd.class
+Task/ProgressiveTask.class
+Task/ComplexTask.class
+Task/BooleanTask.class
+TaskFactory/TaskFactoryStd.class
+Task/Task.class
+TaskFactory/TaskFactory.class
+Task/Priority.class

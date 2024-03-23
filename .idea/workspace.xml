@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c509de00-b2d7-4534-b993-288176c01225" name="Changes" comment="Remove CI" />
+    <list default="true" id="c509de00-b2d7-4534-b993-288176c01225" name="Changes" comment="modified gitignore">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +89,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove CI file from main branch" />
     <MESSAGE value="Remove CI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove CI" />
+    <MESSAGE value="modified gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified gitignore" />
   </component>
 </project>
