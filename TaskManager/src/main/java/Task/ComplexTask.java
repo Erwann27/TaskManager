@@ -10,7 +10,7 @@ public class ComplexTask implements Task{
     private String description;
     private final List<Task> subTasks;
 
-    public ComplexTask(Priority priority, String description) {
+    public ComplexTask(String description, Priority priority) {
         this.priority = priority;
         this.description = description;
         subTasks = new ArrayList<Task>();
