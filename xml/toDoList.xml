@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toDoList SYSTEM "TaskManager\xml\toDoList.dtd">
+
+<toDoList>
+    <booleanTask finished="false">
+        <description text="HELLO"/>
+        <deadline date="30"/>
+        <priority priority="MINOR"/>
+        <estimatedTime days="3.0"/>
+    </booleanTask>
+    <progressiveTask progress="">
+        <description text=""/>
+        <deadline date=""/>
+        <priority priority=""/>
+        <estimatedTime days=""/>
+    </progressiveTask>
+    <complexTask>
+        <description text=""/>
+        <priority priority=""/>
+        <complexTask>
+            <description text=""/>
+            <priority priority=""/>
+            <progressiveTask progress="">
+                <description text=""/>
+                <deadline date=""/>
+                <priority priority=""/>
+                <estimatedTime days=""/>
+            </progressiveTask>
+        </complexTask>
+        <booleanTask finished="true">
+            <description text=""/>
+            <deadline date=""/>
+            <priority priority=""/>
+            <estimatedTime days=""/>
+        </booleanTask>
+    </complexTask>
+</toDoList>
