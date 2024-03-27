@@ -1,5 +1,8 @@
 package Task;
 
+import ToDoList.ComplexTask;
+import ToDoList.Priority;
+import ToDoList.SimpleTask;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
