@@ -1,9 +1,9 @@
-package TaskFactory;
+package ToDoList;
 
-import Task.BooleanTask;
-import Task.ComplexTask;
-import Task.Priority;
-import Task.ProgressiveTask;
+import ToDoList.BooleanTask;
+import ToDoList.ComplexTask;
+import ToDoList.Priority;
+import ToDoList.ProgressiveTask;
 
 import java.util.Date;
 

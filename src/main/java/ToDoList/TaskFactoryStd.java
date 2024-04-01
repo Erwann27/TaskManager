@@ -1,6 +1,4 @@
-package TaskFactory;
-
-import Task.*;
+package ToDoList;
 
 import java.util.Date;
 

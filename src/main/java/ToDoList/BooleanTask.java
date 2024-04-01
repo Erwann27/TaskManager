@@ -1,4 +1,4 @@
-package Task;
+package ToDoList;
 
 
 public interface BooleanTask extends SimpleTask{
