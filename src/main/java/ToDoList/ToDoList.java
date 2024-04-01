@@ -1,6 +1,13 @@
 package ToDoList;
 
+import java.util.List;
+
 public interface ToDoList {
+
+    /**
+     * returns every task contained in the list
+     */
+    List<Task> getTasks();
 
     /**
      * @param task
