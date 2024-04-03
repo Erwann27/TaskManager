@@ -2,7 +2,7 @@ package ToDoList;
 
 import java.util.Date;
 
-public class BooleanTaskStd implements BooleanTask{
+public class BooleanTaskStd implements BooleanTask {
 
     private boolean finished;
     private String description;
@@ -73,4 +73,10 @@ public class BooleanTaskStd implements BooleanTask{
     public void setPriority(Priority priority) {
         this.priority = priority;
     }
+
+    @Override
+    public void accept(TaskVisitor taskVisitor) {
+        taskVisitor.visitBooleanTask(this);
+    }
+
 }

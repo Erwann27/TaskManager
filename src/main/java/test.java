@@ -19,13 +19,12 @@ public class test {
         } catch (ParserConfigurationException | IOException | SAXException e) {
             throw new RuntimeException(e);
         }
-         ToDoList list = builder.createToDoList();
+        ToDoList list = builder.createToDoList();
         for (Task task : list.getTasks()) {
-            System.out.println(task.getDeadline());
             System.out.println(task.getDescription());
+            System.out.println(task.getDeadline());
             System.out.println(task.getPriority());
             System.out.println(task.getEstimatedTimeInDays());
-            System.out.println(task.getProgress());
         }
     }
 }

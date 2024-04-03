@@ -63,6 +63,11 @@ public class ProgressiveTaskStd implements ProgressiveTask{
     }
 
     @Override
+    public void accept(TaskVisitor taskVisitor) {
+        taskVisitor.visitProgressiveTask(this);
+    }
+
+    @Override
     public void setProgress(double progress) {
         this.progress = progress;
     }
