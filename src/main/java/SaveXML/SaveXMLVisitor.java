@@ -26,6 +26,7 @@ public class SaveXMLVisitor implements TaskVisitor {
         offset.add(booleanTask);
         shift = updateShift();
         result += shift + "<description text=\"" + booleanTask.getDescription() + "\"/>\n" +
+                shift + "<deadline date=\"" + booleanTask.getDeadline() + "\">\n" +
                 shift + "<priority priority=\"" + booleanTask.getPriority() + "\"/>\n" +
                 shift + "<estimatedTime days=\"" + (booleanTask.getEstimatedTimeInDays()) + "\"/>\n";
         offset.remove(booleanTask);
@@ -41,6 +42,7 @@ public class SaveXMLVisitor implements TaskVisitor {
         offset.add(progressiveTask);
         shift = updateShift();
         result += shift + "<description text=\"" + progressiveTask.getDescription() + "\"/>\n" +
+                shift + "<deadline date=\"" + progressiveTask.getDeadline() + "\">\n" +
                 shift + "<priority priority=\"" + progressiveTask.getPriority() + "\"/>\n" +
                 shift + "<estimatedTime days=\"" + (progressiveTask.getEstimatedTimeInDays()) + "\"/>\n";
         offset.remove(progressiveTask);
@@ -51,20 +53,19 @@ public class SaveXMLVisitor implements TaskVisitor {
 
     @Override
     public void visitComplexTask(ComplexTask complexTask) {
-        System.out.println(complexTask.getSubTasks().size());
         String shift = updateShift();
         String result = shift + "<complexTask>\n";
         offset.add(complexTask);
         shift = updateShift();
         result += shift + "<description text=\"" + complexTask.getDescription() + "\"/>\n" +
-                shift + "<priority priority=\"" + complexTask.getPriority() + "\"/>\n";
+                shift + "<priority priority=\"" + complexTask.getPriority() + "\"/>";
+        System.out.println(result);
         for (Task task : complexTask.getSubTasks()) {
-            System.out.println("hello");
             task.accept(this);
         }
         offset.remove(complexTask);
         shift = updateShift();
-        result += shift + "</complexTask>";
+        result = shift + "</complexTask>";
         System.out.println(result);
     }
 
@@ -75,6 +76,7 @@ public class SaveXMLVisitor implements TaskVisitor {
     
     private String updateShift() {
         StringBuilder result = new StringBuilder();
+        result.append("\t");
         for (int i = 0; i < offset.size(); ++i) {
             result.append("\t");
         }
@@ -91,9 +93,11 @@ public class SaveXMLVisitor implements TaskVisitor {
         }
         ToDoList list = builder.createToDoList();
         SaveXMLVisitor save = new SaveXMLVisitor();
+        System.out.println("<toDoList>");
         for (Task task: list.getTasks()) {
             task.accept(save);
         }
+        System.out.println("</toDoList>");
     }
 
 }

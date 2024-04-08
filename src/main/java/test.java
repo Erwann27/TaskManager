@@ -3,6 +3,9 @@ import ToDoList.Task;
 import ToDoList.ToDoList;
 import ToDoList.ToDoListBuilder;
 import ToDoList.ToDoListBuilderStd;
+import ToDoList.BooleanTask;
+import ToDoList.ProgressiveTask;
+
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -21,6 +24,11 @@ public class test {
         }
         ToDoList list = builder.createToDoList();
         for (Task task : list.getTasks()) {
+            if (task instanceof BooleanTask) {
+                System.out.println(((BooleanTask) task).isFinished());
+            } else if (task instanceof ProgressiveTask) {
+                System.out.println(task.getProgress());
+            }
             System.out.println(task.getDescription());
             System.out.println(task.getDeadline());
             System.out.println(task.getPriority());
